@@ -5,6 +5,10 @@
     font-family: 'Manrope', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     margin: 0 10%;
 }
@@ -62,7 +66,6 @@ ul {
 }
 
 #navItems a {
-    text-decoration: none;
     color: #000;
 }
 
@@ -694,10 +697,6 @@ img[alt="vector-arrow-section-5"] {
     margin-bottom: 67px;
 }
 
-#trending-jobs .background {
-    background: url(./img/section-7-bkg.png);
-}
-
 #cards-container .card-logo {
     margin-top: 63px;
 }
@@ -708,7 +707,7 @@ img[alt="vector-arrow-section-5"] {
     grid-template-columns: repeat(auto-fit, minmax(475px, max-content));
     justify-content: space-between;
     /* bacground */
-    background-image: url(./img/section-7-bkg.png);
+    background: url(./img/section-7-bkg.png) no-repeat;
     padding: 172px 90px 0;
     margin: 0 -90px;
 }
@@ -724,14 +723,15 @@ footer * {
     font-family: 'Poppins', sans-serif;
 }
 
+footer p:not(.heading),
+footer li:not(.heading) {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .columns.left img,
 .socials {
     margin-bottom: 40px;
-}
-
-p:not(.heading) {
-    font-size: 14px;
-    font-weight: 500;
 }
 
 .heading {
@@ -752,7 +752,7 @@ p:not(.heading) {
 }
 
 .columns.left span {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .socials {
@@ -770,6 +770,7 @@ p:not(.heading) {
 .divider {
     background-color: #fff;
     height: 303px;
+    margin-top: -39px;
 }
 
 /* Column Left */
@@ -796,4 +797,8 @@ p:not(.heading) {
 .footer-note {
     margin-top: 114px;
     text-align: center;
+}
+
+footer ul li a {
+    color: #fff;
 }
