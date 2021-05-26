@@ -7,7 +7,7 @@
 
 html,
 body {
-     width: 100vw;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -545,22 +545,23 @@ hr {
 }
 
 /* Scroll Menu */
-.scroll-menu {
+#scroll-menu {
+    position: relative;
     display: flex;
     margin-bottom: 280px;
     overflow: scroll;
     padding: 30px 0;
 }
 
-.scroll-menu::-webkit-scrollbar {
+#scroll-menu::-webkit-scrollbar {
     display: none;
 }
 
-.scroll-menu::-webkit-scrollbar-button {
+#scroll-menu::-webkit-scrollbar-button {
     display: none;
 }
 
-.scroll-menu>div {
+#scroll-menu>div {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -568,35 +569,35 @@ hr {
     background-color: #e5e5e5;
 }
 
-.scroll-menu>div:not(.scroll-menu>div:last-child) {
+#scroll-menu>div:not(#scroll-menu>div:last-child) {
     margin-right: 70px;
 }
 
-.scroll-menu>div:nth-child(1) {
+#scroll-menu>div:nth-child(1) {
     background-color: #FFF7EC;
 }
 
-.scroll-menu>div:nth-child(2) {
+#scroll-menu>div:nth-child(2) {
     background-color: #FFE2DE;
 }
 
-.scroll-menu>div:nth-child(3) {
+#scroll-menu>div:nth-child(3) {
     background-color: #F2F5EE;
 }
 
-.scroll-menu>div:nth-child(4) {
+#scroll-menu>div:nth-child(4) {
     background-color: #FFF7EC;
 }
 
-.scroll-menu>div:nth-child(5) {
+#scroll-menu>div:nth-child(5) {
     background-color: #FBF5F5;
 }
 
-.scroll-menu>div:nth-child(6) {
+#scroll-menu>div:nth-child(6) {
     background-color: #ECEEFA;
 }
 
-.scroll-menu>div>div {
+#scroll-menu>div>div {
     text-align: center;
     width: 320px;
 }
@@ -622,6 +623,26 @@ img[alt="section-5-bkg"] {
 }
 
 /* Left Div */
+.section-5-left-div {
+    align-self: center;
+}
+
+.slider {
+    animation: fade 1.5s;
+    align-self: center;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 .slider h2 {
     line-height: 75px;
     margin-bottom: 100px;
@@ -657,7 +678,17 @@ img[alt="quotes"] {
 
 .slider-indicator .indicator {
     width: 35px;
+    height: 2px;
     margin-right: 10px;
+}
+
+/* style for indicator */
+.active {
+    background: #4F69CF;
+}
+
+.inactive {
+    background: #c4c4c4;
 }
 
 /* Right Div */
@@ -702,10 +733,6 @@ img[alt="vector-arrow-section-5"] {
 
 /* /////////////////////////////////////////////// */
 /* CTA Section*/
-#cta {
-    margin: 244px 0 216px;
-}
-
 #cta h2 {
     line-height: 75px;
 }
@@ -950,22 +977,30 @@ footer ul li a {
     color: #fff;
 }
 
-body [data-aos][data-aos-easing="new-easing"] {
-    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+/* Custom Easing */
+[data-aos][data-aos][data-aos-easing="new-easing"],
+body[data-aos-easing="new easing"] [data-aos] {
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.67, 1.36);
 }
 
-/* Special use classes */
+#tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
 
-.hidden {
-    display: none;
+    /* Position */
+    position: absolute;
+    z-index: 3;
 }
 
-.indicator-active {
-    background-color: #4F69CF;
-    height: 6px;
+#scroll-menu:hover #tooltiptext {
+    visibility: visible;
 }
 
-.inactive {
-    height: 2px;
-    background-color: #e5e5e5;
+#scroll-menu div {
+    pointer-events: none;
 }
