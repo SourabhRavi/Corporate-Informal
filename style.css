@@ -977,6 +977,8 @@ footer ul li a {
     color: #fff;
 }
 
+
+
 /* Custom Easing */
 [data-aos][data-aos][data-aos-easing="new-easing"],
 body[data-aos-easing="new easing"] [data-aos] {
@@ -1003,4 +1005,8 @@ body[data-aos-easing="new easing"] [data-aos] {
 
 #scroll-menu div {
     pointer-events: none;
+}
+
+.columns ul {
+    list-style: none;
 }
