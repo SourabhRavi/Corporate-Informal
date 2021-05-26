@@ -28,47 +28,48 @@ for (let i = 0; i < 6; i++) {
 
 }
 
-document.getElementsByTagName
 
-// Carousel
-let slider = document.getElementsByClassName("slider");
+// // Carousel
+let slide = document.getElementsByClassName("slider");
 let sliderIndicator = document.getElementsByClassName("indicator");
+let currSlide = 1;
 
-let makeActive = (i) => {
-    if (slider[i].classList.contains("hidden") === true && sliderIndicator[i].classList.contains("indicator-active") === false) {
-        slider[i].classList.remove("hidden");
-        slider[i].classList.add("visible");
-        sliderIndicator[i].classList.remove("inactive");
-        sliderIndicator[i].classList.add("indicator-active");
+function showSlide(index) {
+    if (index > slide.length) {
+        currSlide = 1;
     }
-
-    let remove = () => {
-        slider[i].classList.add("hidden");
-        slider[i].classList.remove("visible");
+    if (index < 1) {
+        currSlide = slide.length;
+    }
+    for (let i = 0; i < slide.length; i++) {
+        slide[i].style.display = 'none';
+        if (sliderIndicator[i].classList.contains("active")) {
+            sliderIndicator[i].classList.remove("active");
+        }
         sliderIndicator[i].classList.add("inactive");
-        sliderIndicator[i].classList.remove("indicator-active");
     }
-    setInterval(remove, 999);
-};
-
-let counter = 0;
-
-let change = () => {
-    console.log(counter);
-    makeActive(counter);
-    if (counter < 3) {
-        counter++;
-        console.log();
-    } else
-        counter = 0;
+    slide[currSlide - 1].style.display = 'inline-block';
+    sliderIndicator[currSlide - 1].classList.remove("inactive");
+    sliderIndicator[currSlide - 1].classList.add("active");
 }
 
-let slideChange = () => {
-    console.log("here");
+function nextSlide() {
+    showSlide(currSlide += 1);
+}
 
-    let a = setInterval(change, 1000);
+// function prevSlide() {
+//     showSlide(currSlide -= 1);
+// }
 
-};
+window.onload = function () {
+    showSlide(currSlide);
+}
+
+setInterval(nextSlide, 2000);
 
 
-slideChange();
+// Tooltip
+document.getElementById("scroll-menu").addEventListener("mousemove", e => {
+    console.log(e);
+    document.getElementById("tooltiptext").style.cssText = `left:${e.offsetX}px; top:${e.offsetY}px;`;
+});
