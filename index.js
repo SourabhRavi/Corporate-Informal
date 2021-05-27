@@ -2,12 +2,12 @@ let container = document.getElementById("cards-container");
 
 let populateCardsContainer = () => {
     let newCard = document.createElement("div");
-    newCard.className = "shadow job-card-trending";
-    newCard.innerHTML = `<h4>Senior Product Designer<br>(UI/UX)</h4>
+    newCard.className = "shadow job-card-trending container-fluid  gy-4";
+    newCard.innerHTML = `<h4 class="bold">Senior Product Designer<br>(UI/UX)</h4>
 
                         <div>
-                            <p><img src="./img/location.svg" alt="" srcset="">New York, NY</p>
-                            <p><img src="./img/employer-icon.svg" alt="" srcset="">DevX</p>
+                            <p class="bold"><img src="./img/location.svg" alt="" srcset="">New York, NY</p>
+                            <p class="bold"><img src="./img/employer-icon.svg" alt="" srcset="">DevX</p>
                         </div>
 
                         <p class="job-type">Full-Time</p>
@@ -17,19 +17,19 @@ let populateCardsContainer = () => {
                             Lorem ipsum dolor sit amet, consectetur.<br>
                             Lorem facilisis ipsum ipsum vel est nec elit.
                         </p>
-                        
+
                         <img src="./img/card-logo.svg" class="card-logo">`;
 
     container.appendChild(newCard);
 }
 
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 12; i++) {
     populateCardsContainer();
 
 }
 
 
-// // Carousel
+// Carousel
 let slide = document.getElementsByClassName("slider");
 let sliderIndicator = document.getElementsByClassName("indicator");
 let currSlide = 1;
@@ -66,7 +66,6 @@ window.onload = function () {
 }
 
 setInterval(nextSlide, 2000);
-
 
 // Tooltip
 document.getElementById("scroll-menu").addEventListener("mousemove", e => {
