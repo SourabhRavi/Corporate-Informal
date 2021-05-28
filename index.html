@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./new.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,13 +34,13 @@
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light g-0">
-            <div class="container-fluid">
+            <div class="container-fluid g-0">
                 <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="" srcset=""></a>
-                <button class="navbar-toggler justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                <button class="navbar-toggler justify-content-center g-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-left" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-left g-0" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a href="#" class="nav-link" aria-current="page">Home</a>
                         <a href="#" class="nav-link">About Us</a>
@@ -51,20 +51,21 @@
                 </div>
 
             </div>
-            <form action="" class="d-flex justify-content-center">
-                <input class="me-2 sign-up-btn form-control" type="submit" value="Sign Up">
+            <form action="" class="d-flex justify-content-center g-0">
+                <input class="me-2 sign-up-btn" type="submit" value="Sign Up">
             </form>
         </nav>
 
-        <div class="container-fluid section-1-content">
-            <div class="row">
-                <div class="col-sm-6 left">
-                    <div class="row">
+        <!-- Section-1 -->
+        <div class="container-fluid section-1-content g-0">
+            <div class="row g-0">
+                <div class="col-sm-8 left g-0">
+                    <div class="row g-0">
                         <h1>Let's find<br>Jobs for you</h1>
                         <h4>Any industry. Any location. Any experience level.</h4>
                     </div>
-                    <div class="row">
-                        <h3>Find jobs in</h3>
+                    <div class="row form-heading">
+                        <h3 class="no-padding-margin">Find jobs in</h3>
                     </div>
                     <div id="form" class="row g-0 shadow">
                         <div class="col-lg-5 g-0">
@@ -79,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 vector-bkg-1 right">
+                <div class="col-sm-4 girl-1 g-0 right">
                     <img class="img-fluid shadow" src=" ./image/girl-1.jpg" alt="" srcset="">
                 </div>
             </div>
@@ -87,30 +88,37 @@
     </section>
 
     <!-- Section-2 -->
-    <section id="section-2" class="wrapper">
+
+    <!-- Section-2 SVG -->
+    <div id="section-2-svg">
+        <img src="./img/vector-arrow-section-2.svg" alt="">
+    </div>
+
+    <section id="section-2" class="wrapper" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
         <div class="container-fluid">
             <div class="row  justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2>Real Salaries from<br>Real Employers</h2>
-                    <p class="salary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Lorem facilisis ipsum ipsum vel est nec elit.</p>
+                    <h2 class="real-main-h">Real Salaries from<br>Real Employers</h2>
+                    <p class="salary real-main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Lorem facilisis ipsum ipsum vel est nec
+                        elit.</p>
                 </div>
             </div>
 
-            <div class="row text-center">
+            <div class="row text-center real-cards">
                 <div class="col-lg-4 col-sm-6 order-sm-0">
                     <img src=" ./img/cards-1.svg" alt="" srcset="">
-                    <h5>Access Real Salary Data</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur.<br>Lorem facilisis ipsum ipsum vel est nec elit.</p>
+                    <h5 class="real-h">Access Real Salary Data</h5>
+                    <p class="real-p">Lorem ipsum dolor sit amet, consectetur.<br>Lorem facilisis ipsum ipsum vel est nec elit.</p>
                 </div>
                 <div class="col-lg-4 col-sm-6 order-sm-1">
                     <img src=" ./img/cards-2.svg" alt="" srcset="">
-                    <h5>Access Real Salary Data</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur.<br>Lorem facilisis ipsum ipsum vel est nec elit.</p>
+                    <h5 class="real-h">Access Real Salary Data</h5>
+                    <p class="real-p">Lorem ipsum dolor sit amet, consectetur.<br>Lorem facilisis ipsum ipsum vel est nec elit.</p>
                 </div>
                 <div class="col-lg-4 col-sm-12 order-sm-2">
                     <img src=" ./img/cards-3.svg" alt="" srcset="">
-                    <h5>Access Real Salary Data</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur.<br>Lorem facilisis ipsum ipsum vel est nec elit.</p>
+                    <h5 class="real-h">Access Real Salary Data</h5>
+                    <p class="real-p">Lorem ipsum dolor sit amet, consectetur.<br>Lorem facilisis ipsum ipsum vel est nec elit.</p>
                 </div>
             </div>
         </div>
@@ -121,6 +129,12 @@
     </div>
 
     <!-- Section-3 -->
+
+    <!-- Section-3 SVG -->
+    <div id="section-3-svg">
+        <img src="./img/vector-arrow-section-3.svg" alt="">
+    </div>
+
     <section id="section-3" class="wrapper">
 
         <div class="container-fluid g-0">
@@ -128,23 +142,24 @@
                 <div class="col-lg-6 col-sm-12 left order-sm-0">
                     <div class="row order-sm-0">
                         <div class="col-lg-3">
-                            <img class="img-fluid" src="./img/section-3-ellipse-lone.svg" alt="">
+                            <img class="img-fluid vector" src="./img/section-3-ellipse-lone.svg" alt="" data-aos="fade-up">
                         </div>
                         <div class="col-lg-9">
-                            <div id="section-3-form" class="row g-0 shadow">
-                                <div class="col-lg-8 g-0 align-middle">
+                            <div id="section-3-form" class="row g-0 shadow" data-aos="fade-right" data-aos-anchor-placement="top-centre">
+                                <div class="col-lg-7 g-0 align-middle">
                                     <input type="text" placeholder="Job Title">
                                 </div>
-                                <div class="col-lg-4 g-0">
+                                <div class="col-lg-5 g-0">
                                     <button class="button"><img src="./img/search.svg">Search</button>
                                 </div>
                             </div>
                             <div class="row order-sm-1">
-                                <div class="col-lg-3 g-0">
-                                    <img src="./img/triple-arrow.svg" alt="" class="img-fluid">
+                                <div class="col-lg-3 g-0 triple-arrow">
+                                    <img src="./img/triple-arrow.svg" alt="" class="img-fluid" data-aos="fade-down">
                                 </div>
                                 <div class="col-lg-9">
-                                    <div id="job-card" class="container-fluid shadow">
+                                    <div id="job-card" class="container-fluid shadow" data-aos="fade-up-left" data-aos-anchor-placement="top-center"
+                                        data-aos-easing="new-easing">
                                         <h4>Senior Product Designer<br>(UI/UX)</h4>
                                         <div>
                                             <p><img src="./img/location.svg" alt="" srcset="">New York, NY</p>
@@ -163,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-12 right order-sm-1">
+                <div class="col-lg-6 col-sm-12 right order-sm-1" data-aos="fade-up-left" data-aos-anchor-placement="top-center">
                     <h2>We Help Candidates Find<br>
                         Their Next Great<br>
                         Opportunity
@@ -187,24 +202,30 @@
         </div>
     </section>
 
+
     <!-- Section-4 -->
-    <section id="section-4" class="wrapper">
-        <div class="container-fluid">
-            <div class="row heading">
+    <section id="section-4" class="wrapper" data-aos="zoom-out-down">
+        <div class="row g-0">
+            <div class="col-lg-6 col-sm-12 order-sm-0">
                 <h2>Trending Job Types</h2>
+            </div>
+            <div class="col-lg-6 col-sm-12 justify-content-end order-sm-1 heading">
                 <form action="">
                     <input type="submit" value="Explore">
                 </form>
             </div>
-
         </div>
 
         <hr>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet, consectetur. Lorem facilisis ipsum ipsum vel est nec elit. Lorem ipsum dolor sit amet, consectetur. Lorem
-                facilisis ipsum
-                ipsum vel est nec elit. Lorem facilisis ipsum ipsum vel est nec elit.
-            </p>
+
+        <div class="row g-0">
+            <div class="col-lg-12 g-0">
+                <p>Lorem ipsum dolor sit amet, consectetur. Lorem facilisis ipsum ipsum vel est nec elit. Lorem ipsum dolor sit amet, consectetur.
+                    Lorem
+                    facilisis ipsum
+                    ipsum vel est nec elit. Lorem facilisis ipsum ipsum vel est nec elit.
+                </p>
+            </div>
         </div>
     </section>
     </div>
@@ -212,54 +233,63 @@
 
 
 
-    <div id="scroll-menu" class="container-fluid g-0">
+    <div id="scroll-menu" class="container-fluid g-0" data-aos="fade-left" data-aos-easing="ease-in" style="position: relative;">
         <span id="tooltiptext">Hold Shift-Key to scroll horizontally</span>
         <div>
             <div>
-                <img src="./img/section-4-vector-1.svg" alt="" srcset="">
+                <img class="img-fluid" src="./img/section-4-vector-1.svg" alt="" srcset="">
                 <h4>From Home</h4>
             </div>
         </div>
 
         <div>
             <div>
-                <img src="./img/section-4-vector-2.svg" alt="" srcset="">
+                <img class="img-fluid" src="./img/section-4-vector-2.svg" alt="" srcset="">
                 <h4>From Home</h4>
             </div>
         </div>
 
         <div>
             <div>
-                <img src="./img/section-4-vector-3.svg" alt="" srcset="">
+                <img class="img-fluid" src="./img/section-4-vector-3.svg" alt="" srcset="">
                 <h4>Online</h4>
             </div>
         </div>
 
         <div>
             <div>
-                <img src="./img/section-4-vector-4.svg" alt="" srcset="">
+                <img class="img-fluid" src="./img/section-4-vector-4.svg" alt="" srcset="">
                 <h4>Full Time</h4>
             </div>
         </div>
 
         <div>
             <div>
-                <img src="./img/section-4-vector-5.svg" alt="" srcset="">
+                <img class="img-fluid" src="./img/section-4-vector-5.svg" alt="" srcset="">
                 <h4>Virtual</h4>
             </div>
         </div>
 
         <div>
             <div>
-                <img src="./img/section-4-vector-6.svg" alt="" srcset="">
+                <img class="img-fluid" src="./img/section-4-vector-6.svg" alt="" srcset="">
                 <h4>Entry</h4>
             </div>
         </div>
     </div>
 
+
+    <div class="section-5-bkg"><img class="img-fluid" src="./image/section-5-bkg.png" alt=""></div>
+
     <!-- Section-5 -->
+
+    <!-- Section-5 SVG -->
+    <div id="section-5-svg">
+        <img src="./img/vector-arrow-section-5.svg" alt="">
+    </div>
+
     <div id="section-5" class="wrapper">
-        <div class="container-fluid g-0">
+        <div class="container-fluid g-0" data-aos="zoom-out-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in">
             <div class="row g-0">
                 <div class="col-lg-6 left g-0">
                     <div class="slider container-fluid">
@@ -331,20 +361,20 @@
 
                 <div class="col-lg-6 right g-0">
                     <div class="row">
-                        <div class="col-lg-6 g-0">
-                            <div class="row justify-content-left g-0">
-                                <img src="./image/girl-4.jpg" alt="" srcset="" class="img-fluid g-0">
+                        <div class="col-lg-7 g-0">
+                            <div class="row justify-content-left g-0 girl-4">
+                                <img src="./image/girl-4.jpg" alt="" srcset="" class="shadow img-fluid g-0">
                             </div>
-                            <div class="row g-0">
+                            <div class="row g-0 slider-sign-up">
                                 <input class="sign-up-btn" type="submit" value="Contact Us">
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <img src="./image/girl-3.jpg" alt="" srcset="" class="img-fluid">
+                        <div class="col-lg-5">
+                            <div class="row girl-3">
+                                <img src="./image/girl-3.jpg" alt="" srcset="" class="shadow img-fluid g-0">
                             </div>
-                            <div class="row">
-                                <img src="./image/girl-5.jpg" alt="" srcset="" class="img-fluid">
+                            <div class="row girl-5">
+                                <img src="./image/girl-5.jpg" alt="" srcset="" class="shadow img-fluid g-0">
                             </div>
                         </div>
                     </div>
@@ -354,7 +384,7 @@
     </div>
 
     <!-- Section-6 -->
-    <div id="section-6" class="wrapper">
+    <div id="section-6" class="wrapper" data-aos="zoom-out-up">
         <div class="container-fluid g-0">
             <div class="row g-0 text-center">
                 <h2>Need to Hire?<br>
@@ -364,7 +394,7 @@
         </div>
     </div>
 
-    <section id="section-trending-jobs" class="trending-wrapper">
+    <section id="section-trending-jobs" class="trending-wrapper" data-aos="fade-up" data-aos-easing="ease-in">
         <div id="cards-container" class="g-0 row">
             <!-- Populate with JavaScript -->
         </div>
@@ -372,13 +402,13 @@
 
     <!-- Section Footer -->
     <footer class="container-fluid g-0">
-        <div class="footer-container row g-0">
+        <div class="footer-container row g-0 justify-content-evenly">
 
             <!-- Column Left -->
-            <div class="columns col-lg-3">
+            <div class="left columns col-lg-2 col-12 order-0">
                 <img src="./img/logo-white.svg" alt="" srcset="">
 
-                <p class="address">
+                <p class="address left">
                     +91-9874563210 <span>|</span> test@abc.com
                     <br><br>
                     C-201, 2nd Floor, The First, B/h Keshav<br>
@@ -389,11 +419,11 @@
             </div>
 
             <!-- Column Middle -->
-            <div class="middle col-lg-4">
+            <div class="middle col-lg-5 col-sm-12 order-sm-1 g-0 offset-lg-1">
                 <div class="row">
                     <!-- one -->
-                    <div class="middle one col-lg-4">
-                        <p class="heading">Links</p>
+                    <div class="middle one col-lg-4 col-sm-6 order-sm-0 order-lg-0">
+                        <p class="head">Links</p>
 
                         <ul>
                             <li><a href="#">Properties</a></li>
@@ -407,9 +437,9 @@
 
                     <!-- two -->
 
-                    <div class="middle two col-lg-4">
+                    <div class="middle two col-lg-4 col-sm-12 order-sm-2 order-lg-1">
 
-                        <p class="heading">Links</p>
+                        <p class="head">Links</p>
                         <ul>
                             <li><a href="#">Terms & Conditions</a></li>
                             <li><a href="#">Privacy Policy</a></li>
@@ -417,8 +447,8 @@
                     </div>
 
                     <!-- three -->
-                    <div class="col-lg-4">
-                        <p class="heading">Links</p>
+                    <div class="col-lg-4 col-sm-6 order-sm-1 order-lg-2 ms-auto">
+                        <p class="head">Links</p>
                         <ul>
                             <li><a href="#">Properties</a></li>
                             <li><a href="#">How It Works</a></li>
@@ -431,24 +461,24 @@
                 </div>
             </div>
 
-            <div class="col-lg-1">
+            <div class="col-lg-1 vertical-rule order-lg-3">
                 <div></div>
             </div>
 
             <!-- Column Right -->
-            <div class="right col-lg-3">
+            <div class="right col-lg-2 col-sm-12 order-sm-3">
                 <div class="socials-and-address">
 
                     <div class="socials-container">
                         <div class="socials">
-                            <i class=" fab fa-facebook-f"></i>
+                            <i class="fab fa-facebook-f"></i>
                             <i class="fa fa-twitter"></i>
                             <img src="./img/instagram.svg" alt="">
-                            <i class=" fa fa-linkedin-in"></i>
+                            <i class="fa fa-linkedin-in"></i>
                         </div>
                     </div>
 
-                    <p class="address">
+                    <p class="address right">
                         +91-9874563210 <span>|</span> test@abc.com
                         <br><br>
                         C-201, 2nd Floor, The First, B/h Keshav<br>
@@ -463,20 +493,6 @@
             <p class="footer-note m-0">Copyright © 2021 Lorem Ipsum. All rights reserved.</p>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- JavaScript -->
     <script src="./index.js"></script>
